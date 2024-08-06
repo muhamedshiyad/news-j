@@ -1,0 +1,37 @@
+/* articles card */
+.smalImg{
+    max-width: 188px;
+    max-height: 105px;
+  }
+  
+p {
+    font-size: 0.80rem; /* Adjust for small screens */
+  }
+  @media screen and (max-width: 480px) {
+    .smalImg{
+      max-width: 90px;
+      max-height: 50px;
+    }
+  }
+  @media (max-width: 576px) {
+    .h5-responsive {
+      overflow: hidden;
+      font-size: 0.70rem; /* Adjust for small screens */
+    }
+  
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    .h5-responsive {
+      font-size: 1rem; /* Adjust for medium screens */
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .h5-responsive {
+      font-size: 1rem; /* Adjust for large screens */
+    }
+    p {
+      font-size: 0.90rem; /* Adjust for small screens */
+    }
+  }
