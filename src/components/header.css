@@ -1,0 +1,85 @@
+/* Header.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar-light.bg-custom {
+  background-color: #43556F; /* Dark background color */
+  padding: 1rem 2rem; /* Add padding */
+}
+.navbar-brand {
+  font-size: 32px; /* Larger font size for more impact */
+  font-weight: bold;
+  color: #ffffff; /* White text color */
+  text-shadow: 
+      1px 1px 0 #000,   /* Base shadow */
+      2px 2px 0 #000,   /* Depth layers */
+      3px 3px 0 #000,
+      4px 4px 0 #000,
+      5px 5px 0 #000;
+  transition: transform 0.3s ease, text-shadow 0.3s ease, color 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  text-shadow: 
+      1px 1px 0 #000,   
+      2px 2px 0 #000,
+      3px 3px 0 #000,
+      4px 4px 0 #000,
+      5px 5px 0 #000,
+      6px 6px 10px rgba(0, 0, 0, 0.5); /* Enhance shadow on hover */
+}
+.navbar-brand ,.nav-link {
+  color: #ffffff !important; /* White text color */
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #adb5bd !important; /* Lighter color on hover */
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 22px
+  }
+
+}
+
+
+/* date and time */
+
+.date-time-display {
+  font-size: 1rem;
+  color: #f8f9fa; /* Light color for the date and time text */
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.date-time-display p {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+.date-time-display i {
+  color: #f8f9face; /* Light color for the icons */
+}
+
+@media (max-width: 767.98px) {
+  .date-time-display {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .date-time-display {
+    display: flex;
+  }
+}
